@@ -1,4 +1,6 @@
 ##Websites for inspiration
+- [Animal Collective](http://myanimalhome.net/#/)
+- [PBVSGR](http://www.pbvsgr.com/)
 - [Kilavaish Drawings](http://we0214.coursifage.net/derungs/index.html)
 
 ##Projects for inspiration
@@ -13,12 +15,6 @@
     + other times, the patterns and shapes are made to look impossible or have two incompatible interpretations
 - Uses Gestalt principle of **Multistability** (devil's tuning fork)
 
-##Websites for inspiration
-- [Kilavaish Drawings](http://we0214.coursifage.net/derungs/index.html)
-
-##Projects for inspiration
-- [https://www.behance.net/gallery/22297747/Bio-Sun](https://www.behance.net/gallery/22297747/Bio-Sun)
-- 
 ###Research Links
 - [http://msfrankel.com/design_principles/elements/assignments/a11_op-art.html](http://msfrankel.com/design_principles/elements/assignments/a11_op-art.html)
 - [https://99designs.com/blog/creative-inspiration/bugging-out-over-op-art-design/](https://99designs.com/blog/creative-inspiration/bugging-out-over-op-art-design/)
