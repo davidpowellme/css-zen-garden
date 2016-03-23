@@ -18,3 +18,5 @@
 ###Research Links
 - [http://msfrankel.com/design_principles/elements/assignments/a11_op-art.html](http://msfrankel.com/design_principles/elements/assignments/a11_op-art.html)
 - [https://99designs.com/blog/creative-inspiration/bugging-out-over-op-art-design/](https://99designs.com/blog/creative-inspiration/bugging-out-over-op-art-design/)
+- [https://en.wikipedia.org/wiki/Op_art](https://en.wikipedia.org/wiki/Op_art)
+- [https://en.wikipedia.org/wiki/Bridget_Riley](https://en.wikipedia.org/wiki/Bridget_Riley)
