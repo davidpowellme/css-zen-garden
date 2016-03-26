@@ -138,9 +138,11 @@ textarea {
   -webkit-appearance: none; }
 
 /*# sourceMappingURL=normalize.min.css.map */
+* {
+  box-sizing: border-box; }
+
 body {
   background: #000;
-  box-sizing: border-box;
   color: #f2f2f2;
   font-family: "proxima-nova-condensed", Helvetica, sans-serif;
   font-size: 16px;
@@ -183,10 +185,10 @@ a {
   height: 15vh; }
 
 footer {
-  width: 100%;
-  margin: 0 auto;
+  background: #a7a7a7;
+  margin: 0 auto -1.25rem auto;
   overflow: hidden;
-  padding: 4rem 0; }
+  width: 100%; }
   footer a {
     display: block;
     float: left;
@@ -209,6 +211,7 @@ footer {
     display: block;
     height: 10em;
     overflow: hidden;
+    padding: 1.25rem;
     width: 90%; }
 
 aside {
@@ -230,9 +233,10 @@ aside {
     width: 33.3333%;
     vertical-align: middle; }
   .design-archives li {
-    overflow: hidden; }
-  .design-archives .next a,
-  .design-archives .viewall a {
+    overflow: hidden;
+    padding: 0; }
+  .design-archives .next,
+  .design-archives .viewall {
     display: block;
     float: left;
     height: 6rem;
@@ -258,9 +262,9 @@ aside {
   float: left;
   padding: 0;
   text-align: center;
-  width: 32.3%; }
+  width: 33.3333%; }
   .design-selection li:nth-child(7), .design-selection li:nth-child(8) {
-    width: 49%; }
+    width: 50%; }
   .design-selection li .design-name,
   .design-selection li .designer-name {
     display: block; }
