@@ -1,0 +1,268 @@
+progress, sub, sup {
+  vertical-align: baseline; }
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+figcaption, menu, article, aside, details, figure, footer, header, main, nav, section, summary {
+  display: block; }
+
+audio, canvas, progress, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden], template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active, a:hover {
+  outline-width: 0; }
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted; }
+
+b, strong {
+  font-weight: bolder; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+sub {
+  bottom: -.25em; }
+
+sup {
+  top: -.5em; }
+
+img {
+  border-style: none; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+button, input, select, textarea {
+  font: inherit;
+  margin: 0; }
+
+optgroup {
+  font-weight: 700; }
+
+select, button, input {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+[type=button], [type=reset], [type=submit], button {
+  cursor: pointer; }
+
+[disabled] {
+  cursor: default; }
+
+[type=submit], [type=reset], button, html [type=button] {
+  -webkit-appearance: button; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+button:-moz-focusring, input:-moz-focusring {
+  outline: ButtonText dotted 1px; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal; }
+
+textarea {
+  overflow: auto; }
+
+[type=checkbox], [type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type=search] {
+  -webkit-appearance: textfield; }
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/*# sourceMappingURL=normalize.min.css.map */
+body {
+  background: #000;
+  box-sizing: border-box;
+  color: #f2f2f2;
+  font-family: "proxima-nova-condensed", Helvetica, sans-serif;
+  font-size: 16px;
+  margin-top: -25px; }
+
+ul {
+  list-style: none;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  width: 90%; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+.preamble h3 {
+  background: url(/images/op-art-circle.png) 0 0 no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+  .preamble h3:after {
+    content: " ";
+    background: url(/images/door-clip.png) 0 0 no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    height: 90vh;
+    width: 80%; }
+
+.intro header {
+  background: url(http://karenpalmer.com/wp-content/uploads/2016/01/Stars.jpg) 0 0 no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #585758;
+  height: 85vh; }
+.intro .summary {
+  height: 15vh; }
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 4rem 0; }
+  footer a {
+    display: block;
+    float: left;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    width: 40%; }
+  footer::before {
+    content: " ";
+    background: url(/images/op-art-circle.png) 0 0 no-repeat;
+    background-position: center;
+    display: block;
+    height: 50vh;
+    overflow: hidden; }
+  footer::after {
+    content: " ";
+    background: url(/images/gauge-black.png) 0 0 no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    height: 10em;
+    overflow: hidden;
+    width: 90%; }
+
+aside {
+  background: #a7a7a7; }
+
+.design-archives {
+  overflow: hidden; }
+  .design-archives nav,
+  .design-archives ul {
+    overflow: hidden; }
+  .design-archives ul:before {
+    content: " ";
+    background: url(/images/knob.png) 0 0 no-repeat;
+    background-position: center;
+    background-size: contain;
+    clear: both;
+    float: left;
+    height: 6rem;
+    width: 33.3333%;
+    vertical-align: middle; }
+  .design-archives li {
+    overflow: hidden; }
+  .design-archives .next a,
+  .design-archives .viewall a {
+    display: block;
+    float: left;
+    height: 6rem;
+    width: 33.3333%;
+    vertical-align: middle; }
+
+.zen-resources li {
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.2rem; }
+  .zen-resources li a {
+    border: 2px solid #262626;
+    display: block;
+    padding: 0.5rem 1rem; }
+
+.design-selection nav {
+  overflow: hidden; }
+.design-selection li {
+  background: #f2f2f2;
+  border: 2px solid #262626;
+  height: 8rem;
+  display: block;
+  float: left;
+  padding: 0;
+  text-align: center;
+  width: 32.3%; }
+  .design-selection li:nth-child(7), .design-selection li:nth-child(8) {
+    width: 49%; }
+  .design-selection li .design-name,
+  .design-selection li .designer-name {
+    display: block; }
+
+/*# sourceMappingURL=main.css.map */

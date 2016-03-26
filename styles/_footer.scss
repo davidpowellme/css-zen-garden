@@ -1,0 +1,141 @@
+//CONTROL PANEL
+
+footer {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 4rem 0;
+
+	a {
+		display: block;
+		float: left;
+		margin: 0 auto;
+		padding: 1rem;
+		text-align: center;
+		width: 40%;
+	}
+
+	&::before {
+		content: " ";
+		background: url(/images/op-art-circle.png) 0 0 no-repeat;
+		background-position: center;
+		display: block;
+		height: 50vh;
+		overflow: hidden;
+	}
+
+	&::after {
+		content: " ";
+		background: url(/images/gauge-black.png) 0 0 no-repeat;
+		background-position: center;
+		background-size: contain;
+		display: block;
+		height: 10em;
+		overflow: hidden;
+		width: 90%;
+	}
+}
+
+aside {
+	background: $color-button;
+}
+
+.design-archives {
+	overflow: hidden;
+
+	nav,
+	ul {
+		overflow: hidden;
+	}
+	
+	ul:before {
+		content: " ";
+		background: url(/images/knob.png) 0 0 no-repeat;
+		background-position: center;
+		background-size: contain;
+		clear: both;
+		float: left;
+		height: 6rem;
+		width: 33.3333%;
+		vertical-align: middle;
+	}	
+
+	li {
+		overflow: hidden;
+	}
+
+	.next a,
+	.viewall a {
+		display: block;
+		float: left;
+		height: 6rem;
+		width: 33.3333%;
+		vertical-align: middle;
+	}
+}
+
+.zen-resources {
+		li {
+			display: inline-block;
+			overflow: hidden;
+			padding: 0.2rem;
+
+			a {
+				border: 2px solid $color-border;
+				display: block;
+				padding: 0.5rem 1rem;
+			}
+
+		}
+}
+
+.design-selection {
+	nav {
+		overflow: hidden;
+	}
+	li {
+		background: $color-text;
+		border: 2px solid $color-border;
+		height: 8rem;
+		display: block;
+		float: left;
+		padding: 0;
+		text-align: center;
+		width: 32.3%;
+
+		&:nth-child(7),
+		&:nth-child(8) {
+			width: 49%;
+		}
+
+		.design-name,
+		.designer-name {
+			display: block;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
