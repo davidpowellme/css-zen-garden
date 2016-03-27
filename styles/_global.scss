@@ -25,6 +25,11 @@ a {
 	text-decoration: none;
 }
 
+.main > div {
+	margin: 0 auto;
+	width: 80%;
+}
+
 //BUTTONS
 
 
@@ -41,7 +46,7 @@ a {
 
 		&:after {
 			content: " ";
-			background: url(/images/door-clip.png) 0 0 no-repeat;
+			background: url(/images/door-old.png) 0 0 no-repeat;
 			background-position: center;
 			background-size: contain;
 			display: block;

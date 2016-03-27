@@ -161,6 +161,10 @@ img {
 a {
   text-decoration: none; }
 
+.main > div {
+  margin: 0 auto;
+  width: 80%; }
+
 .preamble h3 {
   background: url(/images/op-art-circle.png) 0 0 no-repeat;
   background-size: cover;
@@ -168,7 +172,7 @@ a {
   height: 100vh; }
   .preamble h3:after {
     content: " ";
-    background: url(/images/door-clip.png) 0 0 no-repeat;
+    background: url(/images/door-old.png) 0 0 no-repeat;
     background-position: center;
     background-size: contain;
     display: block;
@@ -176,13 +180,24 @@ a {
     width: 80%; }
 
 .intro header {
-  background: url(http://karenpalmer.com/wp-content/uploads/2016/01/Stars.jpg) 0 0 no-repeat;
-  background-position: center;
+  background: #000;
   background-size: cover;
-  color: #585758;
-  height: 85vh; }
+  color: #f2f2f2;
+  height: 85vh;
+  padding-top: 15rem;
+  text-align: center;
+  z-index: 0; }
+  .intro header h1::before {
+    content: " ";
+    background: red;
+    height: 85vh;
+    width: 100%; }
 .intro .summary {
-  height: 15vh; }
+  padding: 1rem; }
+  .intro .summary a {
+    border: 2px solid #f2f2f2;
+    color: #f2f2f2;
+    padding: 0.5rem 1rem; }
 
 footer {
   background: #a7a7a7;

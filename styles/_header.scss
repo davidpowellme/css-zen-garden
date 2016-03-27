@@ -1,13 +1,29 @@
 .intro {
 		header {
-			background: url(http://karenpalmer.com/wp-content/uploads/2016/01/Stars.jpg) 0 0 no-repeat;
-			background-position: center;
+			background:#000;
 			background-size: cover;
-			color: $color-header;
+			color: $color-text;
 			height: 85vh;
+			padding-top: 15rem;
+			text-align: center;
+			z-index: 0;
+
+			h1::before {
+				content: " ";
+				background: red;
+				height: 85vh;
+				width: 100%;
+			}
+			
 		}
 
 		.summary {
-			height: 15vh;
+			padding: 1rem;
+
+			a {
+				border: 2px solid $color-text;
+				color: $color-text;
+				padding: 0.5rem 1rem;
+			}
 		}
 }
