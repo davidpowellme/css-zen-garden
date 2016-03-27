@@ -43,6 +43,7 @@ a {
 		background-size: cover;
 		background-position: center;
 		height: 100vh;
+		padding-top: 15rem;
 
 		&:after {
 			content: " ";
@@ -51,6 +52,7 @@ a {
 			background-size: contain;
 			display: block;
 			height: 90vh;
+			margin-top: -15rem;
 			width: 80%;
 		}
 	}

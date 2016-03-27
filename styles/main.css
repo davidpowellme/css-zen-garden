@@ -169,7 +169,8 @@ a {
   background: url(/images/op-art-circle.png) 0 0 no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh; }
+  height: 100vh;
+  padding-top: 15rem; }
   .preamble h3:after {
     content: " ";
     background: url(/images/door-old.png) 0 0 no-repeat;
@@ -177,21 +178,24 @@ a {
     background-size: contain;
     display: block;
     height: 90vh;
+    margin-top: -15rem;
     width: 80%; }
 
 .intro header {
-  background: #000;
-  background-size: cover;
+  background: #000 url(/images/stars.png) repeat top center;
+  background-position: 0 0;
   color: #f2f2f2;
   height: 85vh;
-  padding-top: 15rem;
   text-align: center;
   z-index: 0; }
-  .intro header h1::before {
-    content: " ";
-    background: red;
+  .intro header h1 {
+    animation: stars 6s ease-in-out infinite;
+    background: transparent;
+    background-position: 0 0;
     height: 85vh;
-    width: 100%; }
+    padding-top: 15rem; }
+  .intro header h2 {
+    margin-top: -15rem; }
 .intro .summary {
   padding: 1rem; }
   .intro .summary a {
@@ -199,6 +203,11 @@ a {
     color: #f2f2f2;
     padding: 0.5rem 1rem; }
 
+@keyframes stars {
+  0% {
+    background: transparent; }
+  100% {
+    background: #000 url(/images/twinkling.png) repeat; } }
 footer {
   background: #a7a7a7;
   margin: 0 auto -1.25rem auto;
