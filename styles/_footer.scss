@@ -10,9 +10,8 @@ footer {
 		display: block;
 		float: left;
 		margin: 0 auto;
-		padding: 1rem;
+		padding: 2rem;
 		text-align: center;
-		width: 40%;
 	}
 
 	&::before {
@@ -20,7 +19,7 @@ footer {
 		background: url(/images/op-art-circle.png) 0 0 no-repeat;
 		background-position: center;
 		display: block;
-		height: 50vh;
+		height: 60vh;
 		overflow: hidden;
 	}
 }
@@ -33,14 +32,19 @@ aside {
 
 	&::before {
 		content: " ";
-		background: url(/images/gauge-black.png) 0 0 no-repeat;
+		background: $color-border url(/images/gauge-black.png) 0 0 no-repeat;
 		background-position: center;
 		background-size: contain;
+		border-top: 20px solid darken($color-header, 15%);
+		border-bottom: 5px solid darken($color-header, 15%);
+		border-right: 5px solid darken($color-header, 10%);
+		border-left: 5px solid darken($color-header, 10%);
 		display: block;
 		height: 10em;
+		margin: 2rem auto;
 		overflow: hidden;
 		padding: 1.25rem;
-		width: 90%;
+		width: 80%;
 	}
 }
 
@@ -51,18 +55,7 @@ aside {
 	ul {
 		overflow: hidden;
 	}
-	
-	ul:before {
-		content: " ";
-		background: url(/images/knob.png) 0 0 no-repeat;
-		background-position: center;
-		background-size: contain;
-		clear: both;
-		float: left;
-		height: 6rem;
-		width: 33.3333%;
-		vertical-align: middle;
-	}	
+		
 
 	li {
 		overflow: hidden;
@@ -73,9 +66,14 @@ aside {
 	.viewall {
 		display: block;
 		float: left;
-		height: 6rem;
-		width: 33.3333%;
-		vertical-align: middle;
+		padding: 1rem;
+		width: 50%;
+		text-align: center;
+
+		a {
+			border: 2px solid $color-border;
+			padding: 0.5rem 1rem;
+		}
 	}
 }
 
@@ -112,7 +110,7 @@ aside {
 		display: block;
 		float: left;
 		font-weight: bold;
-		padding: 1.5rem 0.5rem;
+		padding: 1rem 0.5rem;
 		text-align: center;
 		text-transform: uppercase;
 		width: 33.3333%;

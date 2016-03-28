@@ -172,6 +172,7 @@ p,
 
 .preamble {
   background: #585758;
+  margin-bottom: 2rem;
   padding-bottom: 2rem; }
   .preamble h3 {
     animation: road 10s ease-in forwards 10s;
@@ -225,6 +226,7 @@ p,
 
 .requirements {
   background: #585758;
+  margin-top: 2.5rem;
   padding: 1rem;
   width: 100%; }
 
@@ -285,15 +287,14 @@ footer {
     display: block;
     float: left;
     margin: 0 auto;
-    padding: 1rem;
-    text-align: center;
-    width: 40%; }
+    padding: 2rem;
+    text-align: center; }
   footer::before {
     content: " ";
     background: url(/images/op-art-circle.png) 0 0 no-repeat;
     background-position: center;
     display: block;
-    height: 50vh;
+    height: 60vh;
     overflow: hidden; }
 
 aside {
@@ -301,30 +302,25 @@ aside {
   overflow: hidden; }
   aside::before {
     content: " ";
-    background: url(/images/gauge-black.png) 0 0 no-repeat;
+    background: #262626 url(/images/gauge-black.png) 0 0 no-repeat;
     background-position: center;
     background-size: contain;
+    border-top: 20px solid #323132;
+    border-bottom: 5px solid #323132;
+    border-right: 5px solid #3e3e3e;
+    border-left: 5px solid #3e3e3e;
     display: block;
     height: 10em;
+    margin: 2rem auto;
     overflow: hidden;
     padding: 1.25rem;
-    width: 90%; }
+    width: 80%; }
 
 .design-archives {
   overflow: hidden; }
   .design-archives nav,
   .design-archives ul {
     overflow: hidden; }
-  .design-archives ul:before {
-    content: " ";
-    background: url(/images/knob.png) 0 0 no-repeat;
-    background-position: center;
-    background-size: contain;
-    clear: both;
-    float: left;
-    height: 6rem;
-    width: 33.3333%;
-    vertical-align: middle; }
   .design-archives li {
     overflow: hidden;
     padding: 0; }
@@ -332,9 +328,13 @@ aside {
   .design-archives .viewall {
     display: block;
     float: left;
-    height: 6rem;
-    width: 33.3333%;
-    vertical-align: middle; }
+    padding: 1rem;
+    width: 50%;
+    text-align: center; }
+    .design-archives .next a,
+    .design-archives .viewall a {
+      border: 2px solid #262626;
+      padding: 0.5rem 1rem; }
 
 .zen-resources li {
   display: inline-block;
@@ -361,7 +361,7 @@ aside {
     display: block;
     float: left;
     font-weight: bold;
-    padding: 1.5rem 0.5rem;
+    padding: 1rem 0.5rem;
     text-align: center;
     text-transform: uppercase;
     width: 33.3333%; }
