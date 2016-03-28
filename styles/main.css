@@ -175,25 +175,26 @@ p,
   margin-bottom: 2rem;
   padding-bottom: 2rem; }
   .preamble h3 {
-    animation: road 10s ease-in forwards 10s;
+    animation: road 5s ease-in forwards 10s;
     background: url(/images/op-art-spiral.png) 0 0 no-repeat;
     background-size: cover;
     background-position: center;
-    color: #de0d92;
-    font-size: 0;
+    color: #f2f2f2;
+    font-size: 3.5rem;
     height: 100vh;
-    padding: 15rem 1rem 0 1rem;
+    margin-top: -1rem;
+    padding: 30rem 1rem 0 1rem;
     text-align: center;
     z-index: 4; }
     .preamble h3:after {
-      animation: door 10s linear forwards;
+      animation: door 10s linear forwards 4s;
       content: " ";
-      background: url(/images/door-old.png) 0 0 no-repeat;
+      background: url(/images/door-clip-bw.png) 0 0 no-repeat;
       background-position: center;
       background-size: contain;
       display: block;
       height: 90vh;
-      margin-top: -15rem;
+      margin: -38rem auto 0 auto;
       width: 80%;
       z-index: 0; }
   .preamble p {
@@ -208,9 +209,9 @@ p,
     transform: scale(0); } }
 @keyframes road {
   from {
-    font-size: 0; }
+    color: #f2f2f2; }
   to {
-    font-size: 3.5rem; } }
+    color: #de0d92; } }
 .main {
   overflow: hidden; }
 
@@ -296,10 +297,26 @@ footer {
     display: block;
     height: 60vh;
     overflow: hidden; }
+  footer:after {
+    animation: eye 14s ease-in forwards 18s;
+    background: url(/images/eyeball-bw.png) 0 0 no-repeat;
+    background-size: cover;
+    content: " ";
+    display: block;
+    height: 1px;
+    margin: -13rem auto 0 auto;
+    width: 1px; }
 
+@keyframes eye {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(200); } }
 aside {
   background: #585758;
   overflow: hidden; }
+  aside h3 {
+    display: none; }
   aside::before {
     content: " ";
     background: #262626 url(/images/gauge-black.png) 0 0 no-repeat;
@@ -326,10 +343,7 @@ aside {
     padding: 0; }
   .design-archives .next,
   .design-archives .viewall {
-    display: block;
-    float: left;
     padding: 1rem;
-    width: 50%;
     text-align: center; }
     .design-archives .next a,
     .design-archives .viewall a {
@@ -349,6 +363,7 @@ aside {
   margin: -2rem auto 0 auto;
   overflow: hidden; }
   .design-selection nav {
+    margin: 1rem 0;
     overflow: hidden; }
   .design-selection li {
     background: #a7a7a7;
@@ -360,8 +375,9 @@ aside {
     height: 8rem;
     display: block;
     float: left;
+    font-size: 0.9rem;
     font-weight: bold;
-    padding: 1rem 0.5rem;
+    padding: 1.5rem 0.5rem;
     text-align: center;
     text-transform: uppercase;
     width: 33.3333%; }
