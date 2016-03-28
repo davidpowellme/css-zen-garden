@@ -1,7 +1,7 @@
 //CONTROL PANEL
 
 footer {
-	background: $color-button;
+	background: $color-header;
 	margin: 0 auto -1.25rem auto;
 	overflow: hidden;
 	width: 100%;
@@ -37,8 +37,10 @@ footer {
 	}
 }
 
+
+
 aside {
-	background: $color-button;
+	background: $color-header;
 }
 
 .design-archives {
@@ -96,7 +98,7 @@ aside {
 		overflow: hidden;
 	}
 	li {
-		background: $color-text;
+		background: $color-button;
 		border: 2px solid $color-border;
 		height: 8rem;
 		display: block;

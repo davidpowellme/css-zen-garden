@@ -142,7 +142,7 @@ textarea {
   box-sizing: border-box; }
 
 body {
-  background: #000;
+  background: #262626;
   color: #f2f2f2;
   font-family: "proxima-nova-condensed", Helvetica, sans-serif;
   font-size: 16px;
@@ -206,7 +206,9 @@ p,
     font-size: 0; }
   to {
     font-size: 3.5rem; } }
-.main > div {
+.explanation,
+.participation,
+.benefits {
   background: #f2f2f2;
   color: #262626;
   padding: 1rem;
@@ -214,11 +216,31 @@ p,
   max-width: 700px;
   width: 90%; }
 
+.requirements {
+  background: #585758;
+  padding: 1rem;
+  width: 100%; }
+
 @keyframes stars {
   from {
     background-position: 0 0; }
   to {
     background-position: -10000px 5000px; } }
+h1 {
+  font-size: 3.5rem;
+  padding: 1rem 0; }
+
+h2 {
+  font-size: 2rem;
+  padding: 0.5rem 0; }
+
+h3 {
+  font-size: 1.5rem; }
+
+p {
+  font-size: 1rem;
+  padding: 0.5rem 0; }
+
 .intro header {
   background: #000 url(/images/stars.png) repeat top center;
   background-position: 0 0;
@@ -235,7 +257,8 @@ p,
   .intro header h2 {
     margin-top: -15rem; }
 .intro .summary {
-  padding: 1rem; }
+  padding: 2rem;
+  background: #585758; }
   .intro .summary a {
     border: 2px solid #f2f2f2;
     color: #f2f2f2;
@@ -247,7 +270,7 @@ p,
   to {
     background-position: -10000px 5000px; } }
 footer {
-  background: #a7a7a7;
+  background: #585758;
   margin: 0 auto -1.25rem auto;
   overflow: hidden;
   width: 100%; }
@@ -277,7 +300,7 @@ footer {
     width: 90%; }
 
 aside {
-  background: #a7a7a7; }
+  background: #585758; }
 
 .design-archives {
   overflow: hidden; }
@@ -317,7 +340,7 @@ aside {
 .design-selection nav {
   overflow: hidden; }
 .design-selection li {
-  background: #f2f2f2;
+  background: #a7a7a7;
   border: 2px solid #262626;
   height: 8rem;
   display: block;
