@@ -159,12 +159,16 @@ img {
   max-width: 100%; }
 
 a {
+  color: black;
   text-decoration: none; }
 
 p,
 .main h3 {
   margin: 0 auto;
   max-width: 600px; }
+
+.page-wrapper {
+  overflow: hidden; }
 
 .preamble {
   background: #585758;
@@ -206,6 +210,9 @@ p,
     font-size: 0; }
   to {
     font-size: 3.5rem; } }
+.main {
+  overflow: hidden; }
+
 .explanation,
 .participation,
 .benefits {
@@ -288,7 +295,11 @@ footer {
     display: block;
     height: 50vh;
     overflow: hidden; }
-  footer::after {
+
+aside {
+  background: #585758;
+  overflow: hidden; }
+  aside::before {
     content: " ";
     background: url(/images/gauge-black.png) 0 0 no-repeat;
     background-position: center;
@@ -298,9 +309,6 @@ footer {
     overflow: hidden;
     padding: 1.25rem;
     width: 90%; }
-
-aside {
-  background: #585758; }
 
 .design-archives {
   overflow: hidden; }
@@ -337,21 +345,46 @@ aside {
     display: block;
     padding: 0.5rem 1rem; }
 
-.design-selection nav {
+.design-selection {
+  margin: -2rem auto 0 auto;
   overflow: hidden; }
-.design-selection li {
-  background: #a7a7a7;
-  border: 2px solid #262626;
-  height: 8rem;
-  display: block;
-  float: left;
-  padding: 0;
-  text-align: center;
-  width: 33.3333%; }
-  .design-selection li:nth-child(7), .design-selection li:nth-child(8) {
-    width: 50%; }
-  .design-selection li .design-name,
-  .design-selection li .designer-name {
-    display: block; }
+  .design-selection nav {
+    overflow: hidden; }
+  .design-selection li {
+    background: #a7a7a7;
+    border-right: 5px solid #262626;
+    border-bottom: 5px solid #262626;
+    border-top: 2px solid #262626;
+    border-left: 2px solid #262626;
+    color: #262626;
+    height: 8rem;
+    display: block;
+    float: left;
+    font-weight: bold;
+    padding: 1.5rem 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 33.3333%; }
+    .design-selection li:first-child {
+      padding: 1rem 0.5rem; }
+    .design-selection li:nth-child(7), .design-selection li:nth-child(8) {
+      width: 50%; }
+    .design-selection li .design-name,
+    .design-selection li .designer-name {
+      display: block; }
+
+@media (min-width: 900px) {
+  aside .wrapper {
+    overflow: hidden; }
+  aside:before {
+    float: left;
+    width: 45%; }
+  aside nav {
+    float: left; }
+  aside .design-archives {
+    clear: both; }
+  aside .archives,
+  aside .resources {
+    clear: both; } }
 
 /*# sourceMappingURL=main.css.map */
