@@ -10,8 +10,8 @@
 			z-index: 0;
 
 			h1 {
-				animation: stars 6s ease-in-out infinite;
-				background: transparent;
+				animation: stars 200s linear infinite;
+				background: url(/images/twinkling.png);
 				background-position: 0 0;
 				height: 85vh;
 				padding-top: 15rem;
@@ -35,11 +35,6 @@
 }
 
 @keyframes stars {
-	0% {
-		background: transparent;
-	}
-
-	100% {
-		background: #000 url(/images/twinkling.png) repeat;
-	}
+	from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
 }

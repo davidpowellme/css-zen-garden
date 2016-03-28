@@ -25,10 +25,14 @@ a {
 	text-decoration: none;
 }
 
-.main > div {
+p,
+.main h3 {
 	margin: 0 auto;
-	width: 80%;
+	max-width: 600px;
+
 }
+
+
 
 //BUTTONS
 
@@ -37,15 +41,23 @@ a {
 //THE ROAD TO ENLIGHTENMENT
 
 .preamble {
+	background: $color-header;
+	padding-bottom: 2rem;
 
 	h3 {
-		background: url(/images/op-art-circle.png) 0 0 no-repeat;
+		animation: road 10s ease-in forwards 10s;
+		background: url(/images/op-art-spiral.png) 0 0 no-repeat;
 		background-size: cover;
 		background-position: center;
+		color: #de0d92;
+		font-size: 0;
 		height: 100vh;
-		padding-top: 15rem;
+		padding: 15rem 1rem 0 1rem;
+		text-align: center;
+		z-index: 4;
 
 		&:after {
+			animation: door 10s linear forwards;
 			content: " ";
 			background: url(/images/door-old.png) 0 0 no-repeat;
 			background-position: center;
@@ -54,15 +66,48 @@ a {
 			height: 90vh;
 			margin-top: -15rem;
 			width: 80%;
+			z-index: 0;
 		}
 	}
+
+	p {
+		margin: 0.5rem auto;
+		padding-top: 2rem;
+		width: 80%;
+		}
 }
 
 
+@keyframes door {
+	from {transform: scale(1);}
+	to {
+		transform: scale(0);
+	}
+}
+
+@keyframes road {
+	from {font-size: 0;}
+	to {
+		font-size: 3.5rem;
+	}
+}
+
+// MAIN
 
 
+.main > div {
+	background: $color-text;
+	color: $color-border;
+	padding: 1rem;
+	margin: 1rem auto;
+	max-width: 700px;
+	width: 90%;
+}
 
-
+@keyframes stars {
+	from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
 
 
 
