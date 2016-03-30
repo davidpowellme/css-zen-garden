@@ -24,13 +24,13 @@ footer {
 	}
 
 	&:after {
-		animation: eye 14s ease-in forwards 18s;
+		animation: eye 28s ease-in infinite;
 		background: url(/images/eyeball-bw.png) 0 0 no-repeat;
 		background-size: cover;
 		content: " ";
 		display: block;
 		height: 1px;
-		margin: -13rem auto 0 auto;
+		margin: -13.5rem auto 0 auto;
 		width: 1px;
 		
 
@@ -38,8 +38,9 @@ footer {
 }
 
 @keyframes eye {
-	from{transform: scale(1);}
-	to{transform: scale(200);}
+	0% {transform: scale(1);}
+	50% {transform: scale(200);}
+	100% {transform: scale(1);}
 }
 
 
@@ -48,6 +49,12 @@ footer {
 aside {
 	background: $color-header;
 	overflow: hidden;
+	padding: 1rem;
+
+	.wrapper {
+		float: left;
+		overflow: hidden;
+	}
 
 	h3 {
 		display: none;
@@ -71,46 +78,12 @@ aside {
 	}
 }
 
-.design-archives {
-	overflow: hidden;
-
-	nav,
-	ul {
-		overflow: hidden;
-	}
-		
-
-	li {
-		overflow: hidden;
-		padding: 0;
-	}
-
-	.next,
-	.viewall {
-		padding: 1rem;
-		text-align: center;
-
-		a {
-			border: 2px solid $color-border;
-			padding: 0.5rem 1rem;
-		}
-	}
-}
-
+#design-archives.design-archives,
 .zen-resources {
-		li {
-			display: inline-block;
-			overflow: hidden;
-			padding: 0.2rem;
-
-			a {
-				border: 2px solid $color-border;
-				display: block;
-				padding: 0.5rem 1rem;
-			}
-
-		}
+			display: none;
 }
+
+
 
 .design-selection {
 	margin: -2rem auto 0 auto;
@@ -119,6 +92,7 @@ aside {
 	nav {
 		margin: 1rem 0;
 		overflow: hidden;
+		
 	}
 	li {
 		background: $color-button;
@@ -160,8 +134,9 @@ aside {
 	aside {
 
 		.wrapper {
-			overflow: hidden;
-		}
+		float: left;
+		overflow: hidden;
+	}
 
 		&:before {
 			float: left;
@@ -170,16 +145,10 @@ aside {
 
 		nav {
 			float: left;
+			width: 50%;
 		}
 
-		.design-archives {
-			clear: both;
-		}
 
-		.archives,
-		.resources {
-			clear: both;
-		}
 	}
 }
 
